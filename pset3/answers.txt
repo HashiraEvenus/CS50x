@@ -1,0 +1,41 @@
+sort1 uses: bubble sort
+
+How do you know?: Knowing that the Ω(1) stands only for bubble sort, it means that it would have the quickest time of any other sorting algorithm in an already sorted list since it would be completed in a signle step. 
+The time needed to complete the sorting in the SORTED list of 50000 NUMBERS (sorted50000) was the lowest amongst the others whereas in the rest of the sortings it had the longest timer out of them all.
+
+sort1 on sorted50k = 2.509s //bubble 
+sort2 on sorted50k = 5.9s 
+sort3 on sorted50k = 7.927s 
+
+
+sort2 uses: Merge sort
+
+How do you know?: Merge sort's big O and Ω equal to (n log n) meaning that no matter the list, be it sorted, random or reversed, it would always take nearly the same amount of time each time to sort the list.
+
+sort2 on sorted50k = 5.9s
+sort2 on random50k = 3.085s
+sort2 on reversed50k = 4.145s //merge sort on all of the lists.
+
+
+sort1 on reversed50k = 12.521s 
+sort3 on reversed50k = 7.155s 
+
+sort3 uses: Selection Sort
+
+How do you know?: The big O and Ω of selection sort is equal to O(n^2) and Ω(n^2), meaning that no matter the situation it will always take the same amount of time to sort a list, and can never be completed in one step.
+
+
+
+ TIMERS 
+sort1 on sorted50k = 2.509s //bubble 
+sort2 on sorted50k = 5.9s 
+sort3 on sorted50k = 7.927s 
+
+sort1 on reversed50k = 12.521s 
+sort2 on random50k = 3.085s
+sort3 on reversed50k = 7.155s 
+
+sort1 on random50k = 15.612s //bubble
+sort2 on random50k = 3.085s //merge sort
+sort3 on random50k = 9.666s //selection 
+
