@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+
+    </head>
+    <body>
+
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3>What is my actual name?</h3>
+                <p id = "text"></p>
+                <button onclick = 'red(this)' >Marios</button>
+                <button onclick = green(this)>Hashira Evenus</button>
+                <button onclick = 'red(this)'>Hashira Marios</button>
+                <button onclick = 'red(this)'>Evenus</button>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                
+                <hr>
+                
+                <!-- TODO: Add free response question here -->
+                <h3>What is my peak rank in League of Legends (e.g. Gold 1, Diamond 2, Grandmaster etc.)</h3>
+                <p id = "text1"></p>
+                    <input id="answer">
+                    <button onclick = "check(this)">Check Answer</button>
+            </div>
+        </div>
+
+    </body>
+    <script>
+        // TODO: Add code to check answers to questions
+        function red(id)
+        {
+            id.style.backgroundColor = "#red";
+        document.getElementById("text").innerHTML = "Incorrect!";
+        }
+        function green(id)
+        {
+            id.style.backgroundColor = "#45fc03";
+            document.getElementById("text").innerHTML = "Correct!";
+        }
+        
+        var answerq = "Diamond 4";
+        function check(id)
+        {   
+            var answer = document.getElementById("answer").value;
+            if (answer == answerq)
+            {
+                document.getElementById("text1").innerHTML = "Correct!";
+            }
+            else
+            {
+                document.getElementById("text1").innerHTML = "Incorrect!";
+            }
+        }
+    </script>
+</html>
