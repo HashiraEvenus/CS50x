@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Cashed
+{% endblock %}
+
+{% block main %}
+<p>A share of {{stockname}} costs {{stockprice | usd}}<p>
+{% endblock %}
